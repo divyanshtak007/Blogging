@@ -1,0 +1,125 @@
+header a{
+  text-decoration: none;
+}
+body{ 
+    background-image:url("../images/background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.buttonCenter{
+    text-align: center;
+    height: 80vh;
+    margin:200px 40px;
+    padding: 10px;
+
+}
+
+.button3{
+    background-color:rgb(175, 175, 7); 
+    border: none;
+    
+    color: black;
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 900;
+    box-shadow: -2px -2px  rgb(248, 242, 242);
+
+    
+}
+.button4 {
+    background-color:rgb(175, 175, 7); 
+    border: none;
+    margin: 5px;
+    color: black;
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 900;
+    box-shadow: 2px -2px  rgb(248, 242, 242);
+    
+    
+}
+.modal-headerin {
+    padding: 2px 16px;
+    text-align: center;
+    position: relative;
+
+    
+  }
+  .indexcont {
+    padding: 16px;
+    text-align: left;
+  }
+  .modalin {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentin {
+    background-color: #fefefe;
+    margin-top: 15px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  
+  .closein {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    z-index: 2;
+    /* toh cpde badhiya likhte na  */
+    right: 32%;
+    top: 9.8%;
+    color:black;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .closein:hover,
+  .closein:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animatein {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  .buttonmo{
+    margin-left: 42%;
+    text-align: center;
+    position: relative;
+    background-color: lawngreen;
+    color: white;
+    padding: 4px 16px;
+    display: inline-block;
+    font-size: 16px;
+  }
