@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>
+    scribbler
+</title>
+
+<header>
+    <link rel="stylesheet" href="css/header.css">
+
+    <a href="index.html">
+    <h1>ScriBBler</h1></a>
+    <h5  class="logotag">Explore,imagine,create</h5>
+    <button onclick="document.getElementById('id01').style.display='block'" class="button2">sign in</button>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="modal-header">
+                <h2>WELCOME BACK!</h2>
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="button">sign in </button>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+
+                <div class="notAMember" style="text-align: center;">not a member <button id="signlink" onclick="document.getElementById('id02').style.display='block';"> sign up? </button> </div>
+
+            </div>
+        </form>
+    </div>
+
+    <button onclick="document.getElementById('id02').style.display='block'" class="button1">sign up</button>
+
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="modal-header">
+                <h2>GET STARTED</h2>
+            </div>
+
+            <div class="container">
+                <label for="fname"><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Fullname" name="fname" required>
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="conpsw"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="conpsw" required>
+
+                <button type="submit" class="button">sign up</button>
+
+            </div>
+        </form>
+    </div>
+    <script src="js/header.js"></script>
+</header>
+<link rel="stylesheet" href="css/index.css">
+
+<body>
+    <div class="buttonCenter">
+        <a href="bloglist.html"> <button class="button3">All Post</button></a>
+
+        <button onclick="document.getElementById('id03').style.display='block'
+        " class="button4">Create Post</button>
+        <div id="id03" class="modalin">
+            <span onclick="document.getElementById('id03').style.display='none'" class="closein" title="Close Modal">&times;</span>
+
+            <form class="modal-content animatein" action="/action_page.php">
+                <div class="modal-headerin">
+                    <h3>Pen Your Note</h3>
+                </div>
+
+                <div class="indexcont">
+                    <label for="tname"><b>Title:</b></label><br>
+                    <textarea name="tname"  rows=1 required style="width: 50%;background-color:#99FFFF;"></textarea>
+                    <br>
+
+                    <label for="des">Content:</label>
+                    <textarea name="des" rows=19 required style="width: 100% ;background-color:#99FFFF ;" ></textarea>
+                    <button type="submit" class="buttonmo">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
