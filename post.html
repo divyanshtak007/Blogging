@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/post.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <link rel="stylesheet" href="css/header.css">
+    
+        <a href="index.html">
+            <h1>ScriBBler</h1></a>
+        <h5 class="logotag2">Explore,imagine,create</h5>
+        <button onclick="document.getElementById('id01').style.display='block'" class="button2">sign in</button>
+    
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="modal-header">
+                    <h2>WELCOME BACK!</h2>
+                </div>
+    
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+                    <button type="submit" class="button">sign in </button>
+    
+                </div>
+    
+                <div class="container" style="background-color:#f1f1f1">
+    
+                    <div class="notAMember" style="text-align: center;">not a member<button id="signlink" onclick="document.getElementById('id02').style.display='block';"> sign up? </button> </div>
+    
+                </div>
+            </form>
+        </div>
+    
+        <button onclick="document.getElementById('id02').style.display='block'" class="button1">sign up</button>
+    
+        <div id="id02" class="modal">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="modal-header">
+                    <h2>GET STARTED</h2>
+                </div>
+    
+                <div class="container">
+                    <label for="fname"><b>Full Name</b></label>
+                    <input type="text" placeholder="Enter Fullname" name="fname" required>
+    
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+                    <label for="conpsw"><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" name="conpsw" required>
+    
+                    <button type="submit" class="button">sign up</button>
+    
+                </div>
+            </form>
+        </div>
+        <script src="js/header.js"></script>
+    </header>
+
+
+    <div class="bodypost">
+
+        <div class="bodyhead">
+            How to Get More Views on Your Tech Blog
+        </div>
+        <div class="postHead" style="padding: 20px 0px 0px 0px; font-size: x-large;">
+            <div class="name">jimi</div>
+            <div class="buttonedit make-it-slow" >
+                <button class="btn editId" id="editId">Edit <i class="fa fa-edit" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+        <div class="bodydes">
+            <div class="demoText">  If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.
+        </div></div>
+        <button class="make-it-slow" onclick="clickCounter()" style="padding: 10px 20px; background-color: red; color: white; border: 0px;"><i class="fa fa-thumbs-up" aria-hidden="true" style="padding-right: 3px;"></i> Like</button>
+        <div id="result" style="margin-top: 10px;"></div>
+        <div>
+            <input id='cmtbox'type="text" rows="4%" cols="180%" placeholder="Leave a comment..." style="font-family: 'Open Sans', sans-serif;  padding-left: 10px; padding-top: 3px; margin-top: 30px;">
+        </div>
+        <div style="padding-top: 10px;">
+            <button class="make-it-slow" id="btnComment" style="padding: 10px 20px; background-color: red; color: white; border: 0px;">Comment</button>
+
+        </div>
+        <div>
+            <p style="padding: 20px 0px 0px 0px; margin-bottom: 10px; font-size: medium; font-weight: bold;">All Comments</p>
+            <div id='list' style="background-color: rgb(219, 219, 219); width: 73%; padding: 3px 10px;">
+                <p class="commentPost">Great Post! Thanks!</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/post.js"></script>
+    
+    
+</body>
+
+
+</html>
